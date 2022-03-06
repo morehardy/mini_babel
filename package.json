@@ -1,0 +1,30 @@
+{
+  "name": "mini_babel",
+  "version": "1.0.0",
+  "description": "babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morehardy/mini_babel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morehardy/mini_babel/issues"
+  },
+  "homepage": "https://github.com/morehardy/mini_babel#readme",
+  "dependencies": {
+    "acorn": "^8.7.0",
+    "chokidar": "^3.5.3",
+    "commander": "^9.0.0",
+    "glob": "^7.2.0",
+    "source-map": "^0.7.3"
+  },
+  "devDependencies": {
+    "@types/acorn": "^4.0.6"
+  }
+}
