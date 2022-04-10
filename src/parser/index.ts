@@ -21,4 +21,6 @@ function parse(code: string, options: ParserOptions) {
     })
 }
 
-export default parse
+export default {
+    parse
+}
