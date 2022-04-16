@@ -7,11 +7,9 @@ export type DefinitionKeys = | 'Program' | 'VariableDeclaration' | 'VariableDecl
 
 export type AstDefinitionsMap = Map<DefinitionKeys, AstDefinition>
 
-type ValidationKeys = `is${DefinitionKeys}`
-
-interface use<T> {
-    [key: T]: () => boolean
+type DefToValidations<Keys extends keyof T, V> = {
+    [Key in Keys as `is${Key}`]: V
 }
 
-export type Validations = Record<ValidationKeys, (Node) => boolean>
+export type Validations = DefToValidations<DefinitionKeys, (node: Node) => boolean>
 
